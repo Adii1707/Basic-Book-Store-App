@@ -24,7 +24,7 @@ export const getfailure = ()=>{
         try {
           dispatch(getrequest());
           await axios
-            .get(`http://localhost:4500/product`)
+            .get(`https://wild-tan-iguana-slip.cyclic.app/product`)
             .then((res) => {
               dispatch(getsuccess(res.data));
             });

@@ -20,12 +20,7 @@ const Books = useSelector((store)=> {
   return store.reducer.data
 });
 
-// const Loading = useSelector((store)=> {
- 
-//   return store.reducer.loading
-// })
-//  console.log(Books.length)
-//const handleSort = ()=>{
+// Sorting Functionality........
   
     if(value === "asc" ){
      Books.sort(function (a,b){
@@ -42,9 +37,8 @@ const Books = useSelector((store)=> {
        return (+b.actualprice) - (+a.actualprice);
      });
    }
-//}
 
-console.log(Books, value)
+// useEffect to render the data .......
 
      useEffect(()=>{
  

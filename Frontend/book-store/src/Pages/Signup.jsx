@@ -18,6 +18,7 @@ const initState = {
 const Signup = ()=>{
 const [user, setuser] = useState(initState);
 const toast = useToast()
+
 const handlechange =(e)=>{
   const {name, value} = e.target;
       setuser({...user, [name]: value}) 

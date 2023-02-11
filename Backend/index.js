@@ -7,11 +7,15 @@ const app = express();
 
 app.use(express.json());
 
+// cors middleware to avoid cors error
+
 app.use(cors());
 
 app.get("/", (req, res)=>{
     res.send("HOME PAGE")
 })
+
+// Product Route......
 
 app.use("/product", ProductRoute);
 
