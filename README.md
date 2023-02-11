@@ -41,23 +41,25 @@ step 3 :- npm start <br/>
   
 
   <img src="https://user-images.githubusercontent.com/89689829/218272617-656aba39-1a32-4617-9efa-20fc720eb36b.png" />
-  <img src=""/>
-  <img src=""/>
+  <img src="https://user-images.githubusercontent.com/89689829/218273006-83012769-e871-4031-b1c9-b702e394318c.png
+"/>
+  <img src="https://user-images.githubusercontent.com/89689829/218273022-95fcc01f-ba77-4440-b468-d96dff681075.png
+"/>
    <br/>
  <h3>SignupPage</h3>
  <br/>
- <img src=""/>
+ <img src="https://user-images.githubusercontent.com/89689829/218273035-20bcca22-1950-4411-b89f-48f940675426.png
+"/>
  <br/>
  <h3>LoginPage</h3>
  <br/>
- <img src=""/>
+ <img src="https://user-images.githubusercontent.com/89689829/218273049-cf71cd2c-b5b2-4a7c-aa26-2df857b43c8e.png
+"/>
  <br/>
  <h3>Product Page</h3>
  <br/>
- <img src=""/>
-<img src = ""/>
-<img src=""/>
-<img src=""/>
+ <img src="https://user-images.githubusercontent.com/89689829/218273065-8061e844-d775-4ae1-afeb-fefda5436b9f.png
+"/>
 <br/>
 
 
