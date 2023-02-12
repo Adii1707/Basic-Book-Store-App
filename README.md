@@ -10,13 +10,14 @@ step 3 :- npm start <br/>
 2.react-router-dom <br/>
 3.Chakra-ui <br/>
 4.redux <br/>
-5.redux-thunk <br/>
-6.react-icons <br/>
-7.axios <br/>
-8.@chakra-ui/icons <br/>
-9.react-responsive-carousel
+5.react-redux <br />
+6.redux-thunk <br/>
+7.react-icons <br/>
+8.axios <br/>
+9.@chakra-ui/icons <br/>
+10.react-responsive-carousel
 <br/>
-10.react-slick 
+11.react-slick 
 <hr/>
 <h1>Backend Dependencies </h1> <br/>
 1. express <br/>
