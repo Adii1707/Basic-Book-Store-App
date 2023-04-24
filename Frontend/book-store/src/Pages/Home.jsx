@@ -121,7 +121,7 @@ price: 295
           <Box alignContent={"center"} alignItems="center">
           <hr style={{margin:"60px 80px 30px 160px"}} />
 
-            <SimpleGrid minChildWidth='120px' marginLeft={"150px"}  mr={"90px"} mt = "50px" columns={7}  pt="10px" pb="10px" justifyContent={"center"} justifyItems="center" gap={2}>
+            <SimpleGrid minChildWidth='120px' w="80%" m="auto"  mt = "50px" columns={7}  pt="10px" pb="10px" justifyContent={"center"} justifyItems="center" gap={2}>
            {img.map((el, i)=>(
             <Box key={i}  >
                  <Image key={i} src={el.image} h="100px" w="100px" />
@@ -140,7 +140,7 @@ price: 295
           </Box>
           <Box>
 
-          <SimpleGrid minChildWidth='120px' marginLeft={"160px"}  mr={"80px"} columns={6} gap="40px">
+          <SimpleGrid minChildWidth='120px' w="80%" m="auto" columns={6} gap="40px">
           {img1.map((el,i)=>(
             <Image src={el} key={i} w="250px" m="20px" />
             ))}
@@ -149,7 +149,7 @@ price: 295
         <hr style={{margin:"60px 80px 30px 160px"}} />
 
          <Box>
-         <SimpleGrid minChildWidth='120px' marginLeft={"160px"}  mr={"80px"} mt = "50px"  gap="40px">
+         <SimpleGrid minChildWidth='120px' width={"80%"} m="auto" mt = "50px"  gap="40px">
   <Image  w="250px" m="20px" src={"https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/904/9789389143904.jpg"} />
   <Image w="250px" m="20px" src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/662/9781408726662.jpg" />
   <Image w="250px" m="20px"  src ="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/376/9780345538376.jpg" />
@@ -161,41 +161,41 @@ price: 295
          </Box>
          <hr style={{margin:"60px 80px 30px 160px"}} />
 
-         <Box marginLeft={"190px"} width={"80%"} mt = "30px" >
+         <Box width={"80%"} m="auto" mt = "30px" >
          { <CarouselSlider src= {img2} /> }
          </Box>
-         <Box marginLeft={"190px"} width={"80%"} mt = "30px">
-          <Text fontSize={"38px"} ml={5} fontWeight={"medium"}>
+         <Box width={"80%"} m="auto" mt = "30px">
+          <Text textAlign={{base:"center",sm:"center", md:"start", lg:"start"}} fontSize={{sm:"20px", md:"30px", lg:"30px"}} ml={5} fontWeight={"medium"}>
             Best Seller
             </Text>
             <SliderSlick data = {data}  />
          </Box>
          <hr style={{margin:"60px 80px 30px 160px"}} />
 
-         <Box marginLeft={"190px"} width={"80%"} mt = "30px">
-          <Text fontSize={"38px"} ml={5} fontWeight={"medium"}>
+         <Box width={"80%"} m="auto" mt = "30px">
+          <Text textAlign={{base:"center",sm:"center", md:"start", lg:"start"}} fontSize={{sm:"20px", md:"30px", lg:"30px"}} ml={5} fontWeight={"medium"}>
             Best Seller
             </Text>
             <SliderSlick data = {data}  />
          </Box>
-         <hr style={{margin:"60px 80px 30px 160px"}} />
-         <Flex minChildWidth='120px' marginLeft={"160px"}  mr={"60px"} mt = "50px">
+         <hr style={{margin:"60px 80px 30px 160px", width:"80%", margin:"auto"}} />
+         <Box display={"flex"} flexDirection={{sm:"column", md:"row", lg:"row"}}  width={"80%"} m="auto" mt = "50px">
              <Box>
-             <Text fontSize={"32px"} m="3px" ml={5} fontWeight={"medium"}>
+             <Text fontSize={{sm:"20px", md:"30px", lg:"30px"}} m="3px" ml={5} fontWeight={"medium"}>
             Fiction Books
             </Text>
              <Image src='https://www.bookswagon.com/images/promotionimages/web/nonfictionbooksWeb.jpg?v=2.1' w="600px"  />
              </Box>
              <Box>
-             <Text fontSize={"32px"} ml={5} m="3px" fontWeight={"medium"}>
+             <Text fontSize={{sm:"20px", md:"30px", lg:"30px"}} ml={5} m="3px" fontWeight={"medium"}>
             Manga Mania Best Seller
             </Text>
              <Image src='https://www.bookswagon.com/images/promotionimages/web/4_mangamania.jpg?v=2.1' w = "600px" />
              </Box>
-         </Flex>
+         </Box>
          <hr style={{margin:"60px 80px 30px 160px"}} />
-         <Box marginLeft={"190px"} width={"80%"} mt = "30px">
-          <Text fontSize={"32px"} ml={5} m="5px" fontWeight={"medium"}>
+         <Box width={"80%"} m="auto" mt = "30px">
+          <Text textAlign={{base:"center",sm:"center", md:"start", lg:"start"}} fontSize={{sm:"20px", md:"30px", lg:"30px"}} ml={5} m="5px" fontWeight={"medium"}>
             Internation BestSeller
             </Text>
             <SliderSlick data = {data}  />
@@ -205,14 +205,14 @@ price: 295
           <Image src="https://www.bookswagon.com/images/promotionimages/web/MedicalWeb.jpg?v=1.5" />
          </Box>
          <hr style={{margin:"60px 80px 30px 160px"}} />
-         <Box marginLeft={"190px"} width={"80%"}  mt = "30px">
-          <Text fontSize={"32px"} ml={5} m="5px" fontWeight={"medium"}>
+         <Box width={"80%"} m="auto"  mt = "30px">
+          <Text textAlign={{base:"center",sm:"center", md:"start", lg:"start"}} fontSize={{sm:"20px", md:"30px", lg:"30px"}} ml={5} m="5px" fontWeight={"medium"}>
             Award Winners
             </Text>
             <SliderSlick data = {data}  />
          </Box>
          <hr style={{margin:"60px 80px 30px 160px"}} />
-         <Box bg="#ECECEC" marginLeft={"190px"} width={"80%"} mt = "10px">
+         <Box bg="#ECECEC" width={"80%"} m="auto" mt = "10px">
           <Text pt="10px" textAlign={"center"} fontSize={"32px"} fontWeight="medium" fontFamily="revert-layer" color={"red.500"}>Featured Author</Text>
         <SimpleGrid minChildWidth='120px'  column={6}  textAlign={"center"} pl="70px" pt={10} pb={10} alignItems={"center"} pr="10px" gap={10}  >
            <Box>

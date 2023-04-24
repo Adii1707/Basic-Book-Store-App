@@ -63,42 +63,44 @@ const Books = useSelector((store)=> {
       <Box >
        <Link to={"/"} ><Navbar /></Link> 
         <Subnav />
-       <Flex  minChildWidth='120px' ml="100px" mr="60" column={2}>
+       <Flex  minChildWidth='120px' width={"70%"} m="auto" column={2}>
         {/* <Sidebar />   */}
       <Box alignItems={"center"} >
         <Box textAlign={"center"}>
           <Text fontSize={"38px"} fontWeight={"medium"} fontFamily={"initial"}>Books</Text>
         </Box>
-        <Flex>
+        {/* Filters */}
+        <Box width={"70%"} margin={"auto"} display={"flex"}  flexDirection={{base:"column",sm:"column", md:"row", lg:"row"}} justifyContent={"space-between"} >
              <Text fontWeight={"medium"} m="5px">
               {Books.length} Books Found
              </Text>
-             <Spacer />
-             <Select onChange={(e)=>setValue(e.target.value)} mb="10px" w="300px" p="5px" placeholder='Relevance'>
+             
+             <Select onChange={(e)=>setValue(e.target.value)} mb="10px" w="180px" p="5px" placeholder='Relevance'>
   <option value={"asc"} >Price: Low to High</option>
   <option value={"desc"} >Price: High to Low</option>
   <option value='option3'>Discount</option>
 </Select>
-        </Flex>
+        </Box>
      
 
+{/* Products */}
 
-    <SimpleGrid justifyItems={"center"} spacing={2}  columns={{sm:"2", md:"3", lg:"5" }} >
+    <SimpleGrid gap={"6"} justifyItems={"center"} spacing={2}  columns={{sm:"2", md:"2", lg:"4" }} >
     { Books?.map((book)=> 
    (
-      <Box textAlign={"center"} boxShadow='base' b={"3px"} borderColor={"gray.400"} key={book._id}>
-        <Image src= {book.image} p="10px" alt="books" />
-        <Text pt="5px" fontWeight={"medium"}>{book.booktitle}</Text>
-        <Text pt="5px">{book.author}</Text>
+      <Box w="250px" textAlign={"center"} boxShadow='base' b={"3px"} borderColor={"gray.400"} key={book._id}>
+        <Image w="250px" src= {book.image} h="300px" p="10px" alt="books" />
+        <Text pt="5px" overflow={"hidden"} fontWeight={"medium"}>{book.booktitle}</Text>
+        <Text overflow={"hidden"} pt="5px">{book.author}</Text>
         <Text pt="5px" color={"red.600"} fontWeight={"semibold"}>{book.actualprice}</Text>
       </Box>
     ))}
     </SimpleGrid>
     </Box>
     </Flex>
-    <hr style={{margin:"60px 80px 30px 160px"}} />
+    <hr style={{width:"70%", margin:"auto" ,marginTop:"60px",marginBottom:"70px", }} />
     <Footer />
-    <hr style={{margin:"60px 80px 30px 160px"}} />
+    <hr style={{width:"70%", margin:"auto",marginTop:"60px" ,marginBottom:"70px", }} />
     
     </Box>
   )

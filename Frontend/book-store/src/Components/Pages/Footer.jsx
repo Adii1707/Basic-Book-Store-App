@@ -3,7 +3,7 @@ import { SimpleGrid } from '@chakra-ui/react';
 import {Text, Box} from "@chakra-ui/react"
 export const Footer = () => {
   return (
-    <SimpleGrid marginLeft={"160px"} width={"80%"} mt = "10px" minChildWidth='120px' columns={2} spacing={10}>
+    <SimpleGrid width={"70%"} m="auto" mt = "10px" minChildWidth='120px' columns={2} spacing={10}>
      <Box>
         <h1 style={{color:"red"}}>Company</h1>
         <Text>About Us</Text>

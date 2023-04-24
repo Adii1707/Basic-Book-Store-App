@@ -25,33 +25,33 @@ export const SliderSlick = ({...data})=>{
 //console.log(data.data)
   var settings = {
     dots: true,
-    infinite: true,
-    speed: 300,
+    infinite: false,
+    speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2
+          slidesToScroll: 2,
+        
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -62,7 +62,7 @@ return (
     {data.data.map((el, i)=>(
       <Box m={0} key={el.id} w={"300px"} alignItems="center" textAlign={"center"}>
         <Image ml={"50px"} w={"200px"} h="300px" src={el.image} />
-        <Text fontWeight={"bold"}  fontSize="xl">{el.name}</Text>
+        <Text fontWeight={"bold"} textAlign={"center"} >{el.name}</Text>
         <Text>{el.author}</Text>
         <Text>{el.price}</Text>
       </Box>
