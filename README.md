@@ -1,4 +1,4 @@
-# Basic-Book-Store-App
+# Book-Store-App
 
 <h1>To Start this Project</h1><br/>
 step 1 :- Clone this repo <br/>
